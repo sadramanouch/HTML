@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Tables </title>
+        <meta charset="utf-8">
+        <style>
+            table, td, th {
+                border: 1px solid blue;
+                border-spacing:10;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>My First Table</h1>
+        <table>
+            <caption>Student Information</caption>
+            <tr>
+                <th id="name">Name</th>
+                <th id="Birthday">Birthday </th>
+                <th id="phone">Phone</th>
+            </tr>
+            <tr>
+                <td headers="name">Sadra</td>
+                <td headers="Birthday">5/11</td>
+                <td headers="phone">1234567890</td>
+            </tr>
+            <tr>
+                <td headers="name">Sparky</td>
+                <td headers="Birthday">11/11</td>
+                <td headers="phone">9876543210</td>
+            </tr>
+        </table>
+        <h2>This one shows the use of scope attribute</h2>
+        <table>
+            <caption>Student Information</caption>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Birthday </th>
+                <th scope="col">Phone</th>
+            </tr>
+            <tr>
+                <td >Sadra</td>
+                <td >5/11</td>
+                <td >1234567890</td>
+            </tr>
+            <tr>
+                <td >Sparky</td>
+                <td >11/11</td>
+                <td >9876543210</td>
+            </tr>
+        </table>
+        <h2>Second table that explains the use of rowspan and colspan</h2>
+        <table>
+            <tr>
+                <td colspan="3">This row spans two colums</td>
+                <td>Name</td>
+            </tr>
+            <tr>
+                <td>Column 1</td>
+                <td>Column 2</td>
+                <td>Column 3</td>
+                <td>Column 4</td>
+            </tr>
+            <tr>
+                <td rowspan="2">This spans two rows</td>
+                <td>Column 2</td>
+                <td>Column 3</td>
+                <td>Column 4</td>
+            </tr>
+            <tr>
+                <td>Column 2</td>
+                <td>Column 3</td>
+                <td>Column 4</td>
+            </tr>
+        </table>
+        <h3>Practice table</h3>
+        <table>
+            <tr>
+                <td colspan="2"> Birthday List</td>
+            </tr>
+            <tr>
+                <td>James</td>
+                <td>11/08</td>
+            </tr>
+            <tr>
+                <td>Karen</td>
+                <td>4/17</td>
+            </tr>
+        </table>
+        <h3>Practice table 2</h3>
+        <table>
+            <tr>
+                <td rowspan="3">Cana Island Lighthouse</td>
+                <td>Built: 1869</td>
+            </tr>
+            <tr>
+                <td>Automated: 1944</td>
+            </tr>
+            <tr>
+                <td>Tower Height: 65 feet</td>
+            </tr>
+        </table>
+        <h1>This table shows the row headers which are placed in column 1</h1>
+        <table>
+            <tr>
+                <th scope="row">Name</th>
+                <td>Jack</td>
+                <td>Sadra</td>
+            </tr>
+            <tr>
+                <th scope="row">Birthday</th>
+                <td>5/11</td>
+                <td>9/4</td>
+            </tr>
+            <tr>
+                <th scope="row">Phone</th>
+                <td>1234567890</td>
+                <td>9876543210s</td>
+            </tr>
+        </table>
+    </body>
+</html>

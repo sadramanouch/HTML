@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: antiquewhite;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+/* three column layout */
+
+/* styling header */
+
+header {
+  background-color: rgb(218, 210, 218);
+  border: 1px solid rgb(28, 138, 123);
+  color: white;
+}
+
+header h1 {
+  background: linear-gradient(to right, rgb(46, 147, 165) 30%, black);
+  color: white;
+  font-size: 1.4em;
+  padding: 5px 0px 5px 22px;
+  margin: 0;
+}
+
+/* Navigation list styles */
+nav ul {
+  padding: 0 0.8em;
+}
+#main{
+  flex: 7;
+  order: 2;
+}
+#right{
+  flex: 2;
+  order: 3;
+}
+nav ul li {
+  font-size: 0.9em;
+  list-style-type: none;
+  padding: 10px 10px 10px 10px;
+}
+
+nav a {
+  border-radius: 60px;
+  padding: 1em;
+  color: rgb(14, 67, 83);
+  background-color: rgb(216, 208, 221);
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  display: block;
+}
+
+/* styling sections */
+
+section#main {
+  padding: 10px 20px 0px 10px;
+}
+#all{
+  display: flex;
+}
+#container{
+  box-shadow: 0 0 2px 2px black;
+  min-width: 320px;
+  max-width: 1200px;
+}
+nav{
+  flex: 1;
+  order: 1;
+}
+section#main img {
+  display: block;
+  width: 100%;
+  height: 150px;
+}
+section#main h2 {
+  color: white;
+  background: linear-gradient(to right, rgb(46, 147, 165) 30%, black);
+  font-size: 1.1em;
+  letter-spacing: 5px;
+  padding: 5px 0px 5px 12px;
+}
+section#main p {
+  line-height: 1.4em;
+  margin: 15px;
+}
+
+section#right {
+  padding: 0px 15px 0px 15px;
+}
+
+/* Footer styles */
+
+footer {
+  color: white;
+  background: linear-gradient(to right, rgb(46, 147, 165) 30%, black);
+  font-size: 0.8em;
+  font-style: normal;
+  line-height: 30px;
+  text-align: center;
+  clear: both;
+}
+@media screen and (max-width: 1024px){
+  #container{
+    margin: 0px;
+    width:auto;
+  }
+  nav{
+    display: inline;
+    flex:none;
+  }
+  nav li{
+    display: inline;
+  }
+  nav a{
+    display: inline;
+  }
+}
+@media screen and (max-width: 768px){
+  nav{
+
+  }
+  #img{
+    display:none;
+  }
+  #right{
+    display:none;
+  }
+  nav a{
+    border-bottom: 1px solid black;
+    width: 100%
+  }
+}

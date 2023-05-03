@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MidTermExam</title>
+    <meta charset="utf-8">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>Fitness Unlimited Club <em>since</em> 2015</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Membership</a></li>
+                <li><a href="#">Classes</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+        <section id="main">
+            <h2>Why are we special</h2>
+            <p>Our goal is to help you tackle anything that stands in the way of a healthier you, together. We’ve all
+                been there at one point but the real question is, are you ready to take action?</p>
+            <p>Let's make healthy happen together with helpful, friendly coaches, thousands of welcoming locations
+                worldwide. Gyms are open 24 hours a day, 365 days of the year.</p>
+            <img src="images/logo.jpg" alt="LYS">
+
+        </section>
+
+        <section id="right">
+            <form>
+            <fieldset id="border">
+                <fieldset>
+                    <legend>Give your feedbacks</legend>
+                    <p>
+                <label for="firstname"> First Name </label>
+                <input type="text" name="firstname" id="firstname" placeholder="First name" >
+                </p>
+                <p>
+                <label for="lastname"> Last Name</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Last name" >
+                </p>
+                <p>
+                <label for="Email"> E-mail* </label>
+                    <input type="email" name="Email" id="Email" required>
+                </p>
+                <p>
+                <label for="tel">Phone Number</label>
+                <input type="tel" name="tel" id="tel" placeholder="Phone number">
+                </p>
+                <p>
+                <label for="date">Date of visit</label>
+                <input type="date" name="date" id="date">
+                </p>
+                <p>
+                <label for="class"> Which class you attended </label>
+                <select name="class" id="class" >
+                    <option value="Zoomba" >Zoomba</option>
+                    <option value="Yoga">Yoga</option>
+                    <option value="Hip-Hop">Hip-Hop</option>
+                    <option value="Bale">Bale</option>
+                </select>
+                </p>
+                <p>
+                <label for="rating">Rating from (1-10)</label>
+                <input type="range" name="rating" id="rating" min="1" max="10" step="1">
+                </p>
+                <p>
+                <label>Comments:
+                    <textarea name="comments" id="coments" cols="20" rows="6"></textarea>
+                </label>
+                </p>
+                </fieldset>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Cancel">
+            </fieldset>
+            </form>
+        </section>
+
+        <footer>
+            LYS &#183; 4323 Magnolia Lane &#183; Bismarck, ND 12345 &#183; (701) 555 - 5611
+        </footer>
+    </div>
+
+</body>
+
+</html>

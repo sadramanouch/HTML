@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Final Exam</title>
+    <style>
+        body {
+            background-color: rgb(213, 236, 236);
+            font-size: 1.2em;
+        }
+
+        div {
+            width: 800px;
+            margin: auto;
+            border: 2px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2> Final Exam</h2>
+            <hr>
+            <h2>Styled Content</h2>
+            <p id="para1">It is the Multimedia Web Development Class</p>
+            <p id="para2">Today is Friday!!!!</p>
+            <button type="button" onclick="styledContent()">Press here to see the styled content</button>
+            <hr>
+           
+            <script></script>
+    </div>
+    <script>
+        function styledContent() {
+            let para1 = document.getElementById("para1");
+            let para2 = document.getElementById("para2");
+            para1.style.backgroundColor = "red";
+            para1.style.color = "yellow";
+            para1.style.fontSize = "32px";
+            para1.style.fontWeight = "bold";
+            para2.style.backgroundColor = "lightgreen";
+            para2.style.color = "purple";
+            para2.style.fontSize = "45px";
+            para2.style.fontStyle = "italic";
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Conditionals</title>
+</head>
+
+<body>
+    <h2>Showing the use of Arrays</h2>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="sum"></p>
+    <p id="average"></p>
+    <p id="min"></p>
+    <p id="max"></p>
+
+    <script>
+       let fruits = ["Apples", "Strawberry", "Orange", "Pear"];
+       console.log(fruits);
+       console.log(fruits.length);
+
+       let demo = document.getElementById("demo");
+       demo.innerHTML = fruits[2];
+       demo.innerHTML += "<br>";
+       demo.innerHTML += "<br>";
+
+       for(let i=0; i<fruits.length; i++){
+            demo.innerHTML += fruits[i] + "<br>";
+       }
+       demo.innerHTML += "<br>";
+
+       let numbers = [33, 22, 11, 44, 56];
+       let demo1 = document.getElementById("demo");
+       let sum = document.getElementById("demo1");
+       let average = document.getElementById("average");
+       let min = document.getElementById("min");
+       let max = document.getElementById("max");
+
+       for (let i=0; i<numbers.length; i++){
+           demo1.innerHTML += numbers[i] + "<br>";
+       }
+
+       let answer = 0;
+       for (let i=0; i<numbers.length; i++){
+            answer += numbers[i];
+       }
+       sum.innerHTML += answer + "<br>";
+       sum.style.backgroundColor = "lightgreen";
+
+       let avg = answer / numbers.length;
+       average.innerHTML = "The average is: "+avg;
+       average.style.backgroundColor="lightyellow";
+
+       let minArray, maxArray;
+
+       minArray = numbers[0];
+       maxArray = numbers[0];
+
+       for (let i=1; i< numbers.length; i++) {
+           if (numbers[i] < minArray) {
+               minArray = numbers[i];
+           }
+           if (numbers[i] > maxArray) {
+                maxArray = numbers[i];
+           }
+       }
+       min.innerHTML = "The minimum is: " + minArray;
+       max.innerHTML = "The maximum is: " + maxArray;
+    </script>
+</body>
+
+</html>

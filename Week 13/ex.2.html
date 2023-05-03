@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Conditionals</title>
+</head>
+
+<body>
+    <h2>Showing the use of conditionals</h2>
+    Enter first number: <input type="number" id="num1" name="num1">
+    Enter second number: <input type="number" id="num2" name="num2">
+    Enter third number: <input type="number" id="num3" name="num3">
+    <button onclick="greaterNum()">CLick ME!!</button>
+
+    <p id="demo"></p>
+    <p id="greaterNum"></p>
+    <p id="max"></p>
+    <p id="demo1"></p>
+
+    <script>
+        //use conditionals 
+
+        // if else or switch case or nested if else
+        //relational operation > >= < <= == !=
+        let age = 18;
+
+        let demo = document.getElementById("demo");
+
+        if (age>18){
+            demo.innerHTML = "You are old enough to drive by yourself.";
+        }
+        else{
+            demo.innerHTML = "You need to wait!";
+        }
+
+        function greaterNum() {
+            let num1 = document.getElementById("num1").value;
+            let num2 = document.getElementById("num2").value;
+            let num3 = document.getElementById("num3").value;
+
+            num1 = parseInt(num1);
+            num1 = parseInt(num2);
+            num1 = parseInt(num3);
+
+            let answer = document.getElementById("greaterNum");
+
+            console.log(num1, num2, num3);
+
+            //finding the greater of two numbers
+
+            if (num1 > num2){
+                answer.innerHTML = num1 + " is greater than " + num2;
+            }
+            else{
+                answer.innerHTML = num2 + " is greater than " + num1;
+            }
+
+            //finding the greatest of 3 numbers
+
+            if (num1 > num2){
+                if (num1 > num3){
+                    answer.innerHTML = num1 + " is the greatest";
+                }
+                else{
+                    answer.innerHTML = num3 + " is the greatest";
+                }
+            }
+            else{
+                if (num2 > num3){
+                    answer.innerHTML = num2 + " is the greatest";
+                }
+                else{
+                    answer.innerHTML = num3 + " is the greatest";
+                }
+            }
+
+            //use logical expressions like and && or ||
+            
+            if ((num1>num2) && (num1>num3)) {
+                answer.innerHTML = num1 + " is the greatest";
+            }
+            else if ((num2>num1) && (num2>num3)) {
+                answer.innerHTML = num2 + " is the greatest";
+            }
+            else {
+                answer.innerHTML = num3 + " is the greatest";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

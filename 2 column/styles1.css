@@ -1,0 +1,24 @@
+#wrapper{
+    display: grid;
+    grid-gap: 20px;
+    grid-template: 
+    "header header" 10vh
+    "nav main" 70vh 
+    "footer footer" 10vh
+}
+header{
+    grid-area: header;
+    background-color: yellow;
+}
+nav{
+    grid-area: nav;
+    background-color: #ce93d8;
+}
+main{
+    grid-area: main;
+    background-color: #dcedc8;
+}
+footer{
+    grid-area: footer;
+    background-color: #5dade2;
+}

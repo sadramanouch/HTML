@@ -1,0 +1,104 @@
+* {box-sizing: border-box;}
+header,nav,main,footer {display:block}
+body {
+    background-color: #fcebb6;
+    color: #221811;
+    font-family: Verdana, Arial, sans-serif;
+    background-image: url(images/background.gif);
+    background-image: url(images/background.gif);
+}
+header {
+    background-color: #d2b48c;
+    height: 150px;
+    background-image: url(images/javajamlogo.jpg);
+    background-repeat: no-repeat;
+    border-bottom: 5px solid #fef6c2;
+}
+h1 {
+    padding-top: 45px;
+    padding-left: 200px;
+    font-size: 3em;
+}
+footer {
+    background-color: #d2b48c;
+    font-size: small;
+    font-style: italic;
+    text-align: center;
+    border: 2px solid #221811;
+    padding-bottom: 10px;
+}
+nav{
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding-top: 10px;
+    float: left;
+    width: 200px;
+}
+nav ul{
+    list-style-type: none;
+    padding-left: 0;
+} 
+#wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #231814;
+    min-width: 900px;
+    max-width: 1280px;
+    box-shadow: 5px 5px 5px #666666;
+}
+h4 {
+    font-size: 1.2em;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    background-color: #d2b48c;
+    text-transform: uppercase;
+}
+.details {
+    padding-left: 20%;
+    padding-right: 20%;
+    overflow: auto;
+}
+main {
+    margin-left: 250px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    background-color: #fef6c2;
+    display: block;
+    padding-bottom: 2em;
+}
+img {
+    padding-left: 10px;
+    padding-right: 10px;
+} 
+#heroroad {
+    background-image: url(autumn-in-door-county-david-parker.jpg);
+    background-size: 100% 100%;
+    height: 250px;
+}
+#heromugs {
+    background-image: url(images/heromugs.jpg);
+    background-size: 100% 100%;
+    height: 250px;
+}
+#heroguitar {
+    background-image: url(images/heroguitar.jpg);
+    background-size: 100% 100%;
+    height: 250px;
+}
+main h2, main h3, main h4, main div, main ul, main dl, main p{
+    padding-left: 3em;
+    padding-right: 2em;
+}
+nav a{text-decoration: none;}
+nav a:link{color: #fef6c2;}
+nav a:visited{color: #d2b48c;}
+nav a:hover{color: #CC9933;}
+.floatleft{
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}

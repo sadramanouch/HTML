@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Conditionals</title>
+</head>
+
+<body>
+    <h2>Showing the use of Loops</h2>
+    <label>Enter a number: <input type="number" id="num" name="num"></label>
+    <button type="button" onclick= "calculateFctorial()">Calculate</button>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+        //initialization, condition, updation, loop control variable
+        let demo = document.getElementById("demo");
+        demo.innerHTML += 1 + "<br>";
+        demo.innerHTML += 2 + "<br>";
+        demo.innerHTML += 3 + "<br>";
+        demo.innerHTML += 4 + "<br>";
+        demo.innerHTML += 5 + "<br>";
+        demo.innerHTML += "<br>";
+
+        //while loop
+
+        let i = 1;   //initializing i oce
+
+        while (i<=10){   //condition
+            demo.innerHTML += i + "   ";
+            i++;    //updating the loop variable
+        }
+        demo.innerHTML += "<br>";
+
+        //Do while
+
+        let j = 10;
+        
+        do{
+            demo.innerHTML += j + "   ";
+            j--;
+        }while (j>0);
+        demo.innerHTML += "<br>";
+
+        //for loop
+
+        for (let k = 1; k <= 10; k++) {
+            demo.innerHTML += k + "   ";
+        }
+        demo.innerHTML += "<br>";
+
+        for (let k = 2; k<=20 ; k+=2){
+            demo.innerHTML += k + "   ";
+        }
+        demo.innerHTML += "<br>";
+
+        function calculateFctorial(){
+            let num = document.getElementById("num").value;
+            let answer = 1;
+            num = parseInt(num);
+            console.log(num);
+            for (let i = 1; i<=num; i++){
+                answer = answer*i;
+                console.log(answer);
+            }
+            document.getElementById("demo1").innerHTML = "The factorial of "+ num + " is: " + answer;
+        }
+    </script>
+</body>
+
+</html>

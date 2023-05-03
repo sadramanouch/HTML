@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Q17_ Forms</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form>
+            <label for="firstname"> First Name: </label>
+            <input type="text" name="firstname" id="firstname" placeholder="Enter your first name here"><br>
+            <label> Last Name:
+                <input type="text" name="lasttname" id="lastname" placeholder="Enter your last name here"><br>
+            </label>
+            <label> Email:
+                <input type="email" name="Email" id="Email" placeholder="Enter your email here"><br>
+            </label>
+            <label for="status"> Select your status </label>
+            <select name="status" id="status" >
+                <option value="Domestic" >Domestic</option>
+                <option value="International">International</option>
+            </select><br>
+            <input type="submit" value="Submit" onclick="popup()"><br>
+            <input type="reset"><br>
+        </form>
+        <script>
+            function popup() {
+                alert("Thank you");
+            }
+        </script>
+    </body>
+</html>

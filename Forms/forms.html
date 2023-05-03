@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Web Form</title>
+        <style>
+            fieldset{
+                width: 320px;
+                border: 2px ridge red;
+                padding: 10px;
+            }
+            legend{
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+            }
+            label{
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+            }
+            textarea{
+                resize: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Mailing List</h1>
+        <form action="" name="webform">
+            <label for="firstname"> First Name: </label>
+            <input type="text" name="firstname" id="firstname" placeholder="Enter your first name here" required size="40"><br>
+            
+            <label> Last Name:
+                <input type="text" name="lasttname" id="lastname" placeholder="Enter your last name here" disabled><br>
+            </label>
+            <label> Email:
+                <input type="email" name="Email" id="Email" placeholder="Enter your email here"><br>
+            </label>
+            <label> Password:
+                <input type="password" name="password" id="password" placeholder="Enter your password here"><br>
+            </label>
+
+            <label>Comments:
+                <textarea name="comments" id="coments" cols="40" rows="4" placeholder="Enter your comments here"></textarea>
+            </label>
+
+            <input type="image" src="signup.gif" width="80" height="20" alt="Log in Button">
+            <input type="submit" value="Sign Up"><br>
+            <button>
+                <p>This is Submit button</p>
+                <img src="signup.gif" width="80" height="20" alt="Log in Button">
+            </button>
+            <input type="reset"><br>
+
+            <!-- Check boxes-->
+
+            <h3>Choose your pizza topping</h3>
+            <label for="greenpep">Green Peppers</label>
+            <input type="checkbox" id="greenpep" name="toppings" value ="GreenPeppers"><br>
+            <label for="peperoni">Peperoni</label>
+            <input type="checkbox" id="peperoni" name="toppings" value="Pepperoni" checked><br>
+            <label for="Onion">Onion</label>
+            <input type="checkbox" id="Onion" name="toppings" calue="Onion"><br>
+
+            <!-- Radio Button -->
+
+            <h3>Choose the Crust</h3>
+            <label for="thin">Thin Crust</label>
+            <input type="radio" name="crust" id="thin" value="thin" checked><br>
+            <label for="Thick">Thick Crust</label>
+            <input type="radio" name="crust" id="Thick" value="Thick"><br>
+            <label for="Bagel">Bagel Crust</label>
+            <input type="radio" name="crust" id="Bagel" value="Bagel"><br>
+            <label for="Stuffed">Stuffed Crust</label>
+            <input type="radio" name="crust" id="Stuffed" value="Stuffed"><br>
+
+            <label for="profilephoto">Submit your profile photo</label>
+            <input type="file" name="photo" id="photo">
+
+            <!--Select bod -->
+
+            <h3>Select List</h3>
+            <label for="favcolor"> Choose your Favorite color </label>
+            <select name="favcolor" id="favcolor" multiple>
+                <option value="red" >Red</option>
+                <option value="green">Green</option>
+                <option value="Purple">Purple</option>
+                <option value="Yellow">Yellow</option>
+            </select>
+
+            <!-- Legend -->
+
+            <h1>Contact us</h1>
+            <fieldset>
+                <legend>Costumer Information</legend>
+
+                <label for="fname">First Name: </label>
+                <input type="text" name="fname" id="fname"><br><br>
+                <label for="Lname">Last Name: </label>
+                <input type="text" name="Lname" id="Lname"><br><br>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" tabindex="1"><br><br>
+            </fieldset>
+            <br><br>
+            <label for="comments">Comments:</label>
+            <textarea name="comments" id="cmments" rows="4" cols="50" accesskey="T"></textarea><br><br>
+            <input type="submit">
+            <input type="reset">
+        </form>
+    </body>
+</html>

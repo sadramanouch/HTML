@@ -1,0 +1,80 @@
+body {
+    background-color: #fcebb6;
+    color: #221811;
+    font-family: Verdana, Arial, sans-serif;
+    /* box-shadow: 2px 2px 2px; */
+}
+header {
+    background-color: #d2b48c;
+    height: 150px;
+    background-image: url(unnamed\ \(3\).jpg);
+    background-repeat: no-repeat;
+}
+h1 {
+    /* font-size: 3em; */
+    padding-top: 45px;
+    /* padding-left: 220pc; */
+}
+footer {
+    background-color: #d2b48c;
+    font-size: small;
+    font-style: italic;
+    text-align: center;
+    border: 2px solid #221811;
+    padding-bottom: 10px;
+}
+nav{
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding-top: 10px;
+}
+#wrapper{
+    background-color: #fef6c2;
+}
+#space p {
+  margin-left: 40px
+}
+h4 {
+    margin-top: -13px;
+    margin-bottom: -13px;
+}
+#logo {
+    float: left;
+}
+#road {
+    float: right;
+}
+#none {
+    background-color: #d2b48c;
+    font-size: 1.2em;
+    padding-left: 0.5em;
+    padding-bottom: 0.25em;
+}
+#details {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+main {
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#color{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fef6c2;
+    min-width: 900px;
+    max-width: 1280px;
+    box-shadow: 2px 2px 2px;
+}
+img {
+    padding-left: 10px;
+    padding-right: 10px;
+}

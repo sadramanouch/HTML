@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(197, 192, 177);
+  font-family: Verdana, Geneva, sans-serif;
+}
+nav{
+  float: left;
+  width: 10%;
+}
+#main{
+  float: left;
+  width: 70%;
+}
+h2{
+  font-size: 1.1em;
+  letter-spacing: 5px;
+  background: linear-gradient(
+    to right,
+    rgb(192, 175, 175) 30%,
+    rgb(193, 201, 202)
+  );
+  padding: 0.5em;
+}
+label{
+  display: inline-block;
+}
+#border{
+  border-style: inset;
+}
+legend{
+  background-color: rgb(192, 175, 175);
+}
+p{
+  line-height: 1.4em;
+  margin: 25px;
+}
+input, select{
+  display: block;
+}
+#right{
+  float: left;
+  width: 20%;
+  overflow: auto;
+}
+form{
+  padding: 0.5em;
+}
+#sub{
+  display: inline-block;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+#container{
+  width: 100%;
+  /* max-width: 1200px; */
+  min-width: 320px;
+  box-shadow: 5px 5px 5px;
+  background-color: white;
+}
+a:visited{
+  color: blue
+}
+a:hover{
+  color: red;
+}
+/* three column layout */
+
+/* styling header */
+
+header {
+  background-color: rgb(156, 147, 156);
+  border: 2px solid rgb(48, 43, 36);
+}
+
+header h1 {
+  background: linear-gradient(
+    to right,
+    rgb(192, 175, 175) 30%,
+    rgb(193, 201, 202)
+  );
+  color: black;
+  font-size: 1.4em;
+  padding: 5px 0px 5px 22px;
+  margin: 0;
+}
+
+/* Navigation list styles */
+nav ul {
+  padding: 0 0.8em;
+}
+
+nav ul li {
+  font-size: 0.9em;
+  list-style-type: none;
+  padding: 10px 10px 10px 10px;
+}
+
+nav a {
+  border-radius: 60px;
+  padding: 1em;
+  color: black;
+  background-color: rgb(192, 175, 175);
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  display: block;
+}
+
+/* nav pseudo classes */
+
+/* styling sections */
+
+section#right {
+  padding: 0px 15px 0px 15px;
+}
+
+/* Form styles */
+
+/* Footer styles */
+
+footer {
+  color: black;
+  background: linear-gradient(
+    to right,
+    rgb(192, 175, 175) 30%,
+    rgb(193, 201, 202)
+  );
+  font-size: 0.8em;
+  font-style: normal;
+  line-height: 30px;
+  text-align: center;
+  clear: both;
+}
+
+/* ===============================
+   Tablet Styles: 0px to 1024px 
+   ===============================
+*/
+
+/* ===============================
+   Mobile Styles: 0px to 768px 
+   ===============================
+*/
+@media screen and (max-width: 1024px){
+  *{
+    margin: 0;
+  }
+  nav{
+      float: none;
+      width: auto;
+      text-align: center;
+      background-color: lightgrey;
+  }
+  nav li{
+      display: inline-block;
+  }
+  #main{
+      float: left;
+      width: 70%
+  }
+  #right{
+      float: left;
+      width: 30%;
+      padding: 5px;
+  }
+  nav a{
+      border-top: none;
+      border-left: none;
+      border-right: none;
+  }
+}
+@media screen and (max-width: 760px){
+  nav, #main, #right{
+      float: none;
+      width: auto;
+  }
+  img{
+    display: none;
+  }
+  nav li{
+    display: block;
+    width: 100%;
+  }
+  nav a{
+    padding: 0;
+    border-bottom:1px solid black;
+  }
+  nav ul{
+    padding: 0;
+  }
+  input, select{ 
+    display: inline-block;
+  }
+  label{
+    width: 30%;
+    text-align: right;
+  }
+}
